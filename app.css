@@ -257,3 +257,11 @@ footer .contact i {
   background-color: rgb(157, 100, 46);
   color: #e1e1e1;
 }
+/*About Page*/
+#about-head{
+    display: flex;
+    align-items: center;
+}
+#about-head div{
+    padding-left: 20px;
+}
