@@ -1,7 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/crava');
 
 body {
-  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 16px;
 }
 
@@ -119,6 +119,8 @@ body {
 .hero-section:hover {
   transform: scale(1.1);
 }
+
+
 
 /*the button of home page*/
 footer {
@@ -276,6 +278,22 @@ footer .contact i {
 #form-details form button {
   background-color: rgb(157, 100, 46);
   color: #e1e1e1;
+}
+
+.normal {
+  display: flex;
+  align-items: center;
+}
+
+.normal::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url("logo picture.webp");
+  background-size: cover;
+  background-position: center;
+  margin-right: 10px;
 }
 
 /*About Page*/
