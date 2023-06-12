@@ -1,0 +1,471 @@
+
+@import url('https://fonts.cdnfonts.com/css/crava');
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2; /* צבע רקע */
+  border-radius: 30px; /* עיגול */
+  padding: 10px;
+  width: 300px;
+}
+
+.search-container i {
+  margin-right: 10px;
+  color: #999;
+}
+
+.search-container input[type="text"] {
+  border: none; /* הסרת ה- border */
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+}
+
+.fa-user {
+  color: black;
+  
+}
+body {
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-size: 16px;
+}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(170, 111, 111);
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgb(210, 180, 140);
+  color: white;
+}
+
+#logoImage {
+  float: right;
+  margin-top: -30px;
+}
+
+#searchbar {
+  width: 500px;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.navbar {
+  overflow: visible;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  position: relative;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(170, 111, 111);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 50px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.hero-section {
+  background-image: url('homepage.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  font-family: 'CRAVA', sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 36px;
+
+}
+
+.hero-content h2 {
+  margin-top: -120px;
+}
+
+.hero-section:hover {
+  transform: scale(1.1);
+}
+
+/*the button of home page*/
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .col {
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+footer #logoImage {
+  margin-bottom: 30px;
+
+}
+
+footer h4 {
+  font-size: 14px;
+  padding-bottom: 20px;
+
+}
+
+footer p {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+
+}
+
+footer p {
+  font-size: 13px;
+  text-decoration: none;
+  color: #222;
+  margin-bottom: 10px;
+
+}
+
+.payment {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 5px
+}
+
+.copyright {
+  flex-shrink: 0;
+  text-align: center;
+
+  padding: 10px;
+}
+
+footer .contact i {
+  padding-right: 4px;
+  cursor: pointer;
+
+}
+
+/*Contact Page*/
+
+#contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#contact-details .details {
+  width: 40%;
+}
+
+#contact-details .details span,
+#form-details form {
+  font-size: 12px;
+}
+
+#contact-details .details h2,
+#form-details form h2 {
+  font-size: 26px;
+  line-height: 35px;
+  padding: 20px 0;
+}
+
+#contact-details .details h3 {
+  font-size: 16px;
+  padding-bottom: 15px;
+
+}
+
+#contact-details .details li {
+  list-style: none;
+  display: flex;
+  padding: 10px 0;
+}
+
+#contact-details .details li i {
+  font-size: 14px;
+  padding-right: 22px;
+
+}
+
+#contact-details .details li p {
+  margin: 0;
+  font-size: 14px;
+}
+
+#contact-details .map {
+  width: 55%;
+  height: 350px;
+}
+
+#contact-details .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+
+#form-details form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#form-details form input,
+#form-details form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid #e1e1e1;
+}
+
+#form-details form button {
+  background-color: rgb(157, 100, 46);
+  color: #e1e1e1;
+}
+/*About Page*/
+#about-head{
+    display: flex;
+    align-items: center;
+}
+#about-head div{
+    padding-left: 20px;
+}
+
+/*login and signup pages css*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  .container-signup{
+    
+    background-image: url("signup_login.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+  
+    padding: 45px;
+  }
+  .container-signup2{
+    
+    background-image: url("signup_login2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+  
+    padding: 45px;
+  }
+  .container-h{
+    font-family: cursive;
+    color: rgb(247, 251, 251);
+    text-align: center;
+    
+    
+    
+    font-weight: 500;
+    text-shadow: 0px 0px 4px black;
+  }
+  
+  .container {
+      font-family: cursive;
+    width: 100%;
+    max-width: 650px;
+    background-color: #333;
+    padding: 28px;
+    margin: 0 auto; /* Set left and right margins to auto */
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+    text-shadow: 0px 0px 2px rgb(17, 24, 32);
+  }
+  
+  .form-title{
+   font-family: cursive;
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 0px 0px 3px black;
+    border-bottom: solid 1px white;
+  }
+  
+  .main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+  
+  .user-input-box:nth-child(2n){
+    justify-content: end;
+  }
+  
+  .user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+    
+  }
+  
+  .user-input-box label{
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+  }
+  
+  .user-input-box input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+  }
+  
+  .gender-title{
+    color:white;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+  }
+  
+  .gender-category{
+    margin: 15px 0;
+    color: white;
+  }
+  
+  .gender-category label{
+    padding: 0 20px 0 5px;
+  }
+  
+  .gender-category label,
+  .gender-category input,
+  .form-submit-btn input{
+    cursor: pointer;
+  }
+  
+  .form-submit-btn{
+    margin-top: 40px;
+  
+  }
+  
+  .form-submit-btn input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border:none;
+    border-radius: 3px;
+    color: rgb(209, 209, 209);
+    background: rgba(57, 95, 118, 0.7);
+  }
+  
+  .form-submit-btn input:hover{
+    background: rgba(188, 173, 229, 0.7);
+    color: rgb(255, 255, 255);
+  }
+  
+  @media(max-width: 600px){
+    .container{
+        min-width: 280px;
+    }
+  
+    .user-input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+  
+    .user-input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+  
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+  
+    .main-user-info{
+        max-height: 380px;
+        overflow: auto;
+    }
+  
+    .main-user-info::-webkit-scrollbar{
+        width: 0;
+    }
+  }
+  
+  .register{
+    color:white;
+    font-weight: 540;
+    font-size: 20px;
+    
+  }

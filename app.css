@@ -180,6 +180,26 @@ footer .contact i {
 
 }
 
+.container-signup {
+
+  background-image: url("signup_login.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  padding: 45px;
+}
+
+.container-signup2 {
+
+  background-image: url("signup_login2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  padding: 45px;
+}
+
 /*Contact Page*/
 
 #contact-details {
@@ -257,11 +277,42 @@ footer .contact i {
   background-color: rgb(157, 100, 46);
   color: #e1e1e1;
 }
+
 /*About Page*/
-#about-head{
-    display: flex;
-    align-items: center;
+#about-head {
+  background-color: #f9f9f9;
+  padding: 40px;
+  text-align: center;
 }
-#about-head div{
-    padding-left: 20px;
+
+#about-head .details {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#about-head span {
+  display: block;
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#about-head h2 {
+  font-size: 24px;
+  color: #333;
+  line-height: 1.5;
+}
+
+
+/*style on rings page*/
+#product1 {
+  text-align: center;
+}
+
+#product1 .pro {
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+
 }
