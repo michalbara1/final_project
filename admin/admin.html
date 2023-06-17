@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="app.css" rel="stylesheet">
+    <link href="admin.css" rel="stylesheet">
+    <script src="express.js"> </script>
+    <script src="app.js"> </script>
+    <script src="admin.js"> </script>
+    <title>Manger only</title>
+</head>
+<body>
+  <form action="#">
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" id="uname" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="psw" required>
+  
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+
+  <div>
+    <h1 id="welcomeMessage"> </h1>
+    <div class="button-container">
+    <button id="createButton" class="mngbutton" > Create</button>
+    <button id="updateButton" class="mngbutton"> Update</button>
+    <button id="deleteButton" class="mngbutton"> Delete</button>
+    <button id="searchButton" class="mngbutton"> Search</button>
+    </div>
+  </div>
+  
+</body>
+</html>

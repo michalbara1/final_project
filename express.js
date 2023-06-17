@@ -22,12 +22,17 @@ app.get('/About', (req, res) => {
     res.sendFile(path.join(__dirname, 'about.html'));
   });
 
-app.listen(port, function() {
+app.get('/Admin', (req, res) => {
+      res.sendFile(path.join(__dirname, 'admin.html'));
+});
+
+  app.listen(port, function() {
     console.log('you connect to port 3300');
   });
 
 
 
+  
 
 
 
