@@ -30,6 +30,9 @@ app.get('/Admin', (req, res) => {
     console.log('you connect to port 3300');
   });
 
+  const connectDB = require('./mongo.js');
+  connectDB();
+
 
 
   
