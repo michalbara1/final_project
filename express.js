@@ -4,6 +4,8 @@ var port = 3300;
 
 var path = require('path');
 
+//to add the css file
+app.use(express.static('app'));
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'app', 'app.html'));
@@ -31,11 +33,12 @@ app.get('/About', (req, res) => {
   });
 
 app.get('/Admin', (req, res) => {
-      res.sendFile(path.join(__dirname,'admin','admin.html'));
+      res.sendFile(path.join(__dirname,'app','admin','admin.html'));
 });
 
 
 //to add a catagory in admin
+/*
 app.use(express.json());
 app.use(express.static('public'));
 
@@ -89,6 +92,7 @@ app.post('/addAccessory', (req, res) => {
     });
   });
 });
+*/
 
 // to coonect to the server
 app.listen(port, function() {
