@@ -20,9 +20,6 @@
       <input type="password" placeholder="Enter Password" id="psw" required>
   
       <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
     </div>
   
     <div class="container" style="background-color:#f1f1f1">
@@ -33,12 +30,32 @@
   <div>
     <h1 id="welcomeMessage"> </h1>
     <div class="button-container">
-    <button id="createButton" class="mngbutton" > Create</button>
+    <button id="createButton" class="mngbutton" onclick="createNew()" > Create</button>
     <button id="updateButton" class="mngbutton"> Update</button>
     <button id="deleteButton" class="mngbutton"> Delete</button>
     <button id="searchButton" class="mngbutton"> Search</button>
     </div>
   </div>
   
+  <form id="newAccessoryForm">
+    <label for="category">Category:</label>
+    <select id="category">
+      <option value="rings">Rings</option>
+      <option value="necklaces">Necklaces</option>
+      <option value="bracelets">Bracelets</option>
+    </select>
+    <br>
+    <label for="pictureUrl">Picture URL:</label>
+    <input type="text" id="pictureUrl" required>
+    <br>
+    <label for="description">Description:</label>
+    <input type="text" id="description" required>
+    <br>
+    <label for="price">Price:</label>
+    <input type="number" id="price" required>
+    <button type="submit" onclick="addTohtml()">Add Accessory</button>
+  </form>
+  
+
 </body>
 </html>
