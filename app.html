@@ -21,9 +21,9 @@
     </span>
 
     <div>
-       <canvas id="myCanvas" width="300" height="100"> </canvas>
-       <img id="logoImage" src="logo%20picture.webp" style="width: 150px; height: 150px;">   
-      </div>
+      <canvas id="myCanvas" width="300" height="100"> </canvas>
+      <img id="logoImage" src="logo%20picture.webp" style="width: 150px; height: 150px;">
+    </div>
 
   </header>
 
@@ -76,9 +76,11 @@
   <div>
     <br>
     <i class='fa fa-search'></i>
-    <input type="text" id="searchbar" name="fname"></input>
-
+    <input type="text" id="searchbar" name="fname" placeholder="Search products"></input>
   </div>
+
+
+  </section>
 
   <div class="container-signup">
     <h1 class="container-h"></h1><br>
@@ -112,10 +114,13 @@
       <div class="contact">
         <h4>Contact with us</h4>
         <div class="icon">
-          <i class="fa fa-whatsapp" style='font-size:25px;'></i>
-          <i class="fa fa-envelope" style='font-size:25px;'></i>
-          <i class="fa fa-facebook-f" style='font-size:25px;'></i>
-          <i class="fa fa-instagram" style='font-size:25px;'></i>
+          <a href="https://wa.me/039628930" target="_blank"> <i class="fa fa-whatsapp" style='font-size:25px;'></i>
+            <a href="mailto:Maitala@college.org.il" target="_blank"><i class="fa fa-envelope"
+                style='font-size:25px;'></i>
+              <a href="https://www.facebook.com/ColmanAguda" target="_blank"><i class="fa fa-facebook-f"
+                  style='font-size:25px;'></i>
+                <a href="https://www.instagram.com/colmanaguda/" target="_blank"> <i class="fa fa-instagram"
+                    style='font-size:25px;'></i>
         </div>
       </div>
     </div>
@@ -154,6 +159,23 @@
   <div class="copyright">
     <p>&copy; 2023, COCO JEWELRY</p>
   </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+    integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $('input').autocomplete({
+        source: ['wedding ring', 'silver ring']
+
+
+      })
+    })
+  </script>
+
 
 </body>
 
