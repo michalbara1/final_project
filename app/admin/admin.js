@@ -64,6 +64,7 @@ function createNew() {
 
     var categoryPage = category + '.html';
     var targetPage = window.location.origin + '/' + categoryPage;
+    
 
     // Optional: You can perform an AJAX request to save the accessory data to the server/database here
 

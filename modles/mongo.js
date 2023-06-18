@@ -15,13 +15,6 @@ const connectDB= async()=>{
     }
 }
 module.exports =connectDB;
-const schemei= new mongoose.Schema({
-    image:{
-        type:'string',
-        required:true
-    },
-    title:{
-        type:'string',
-        required:true
-    }
-})
+
+
+

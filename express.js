@@ -99,8 +99,8 @@ app.listen(port, function() {
   console.log('you connect to port 3300');
 });
 
-  const connectDB = require('./mongo.js');
-  connectDB();
+const connectDB = require('./modles/mongo.js');
+connectDB();
 
 
 
